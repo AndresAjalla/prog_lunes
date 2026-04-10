@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio 2 JS</title>
+</head>
+<body>
+
+<script>
+let distancia = 15000;
+let transporte;
+
+if (distancia <= 1000) {
+    transporte = "pie";
+} else if (distancia <= 10000) {
+    transporte = "bicicleta";
+} else if (distancia <= 30000) {
+    transporte = "colectivo";
+} else if (distancia <= 100000) {
+    transporte = "auto";
+} else {
+    transporte = "avion";
+}
+
+console.log("Para " + distancia + " metros, el transporte recomendado es: " + transporte);
+</script>
+
+</body>
+</html>
