@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de caracteres</title>
+</head>
+<body>
+
+<h2>Escribí algo:</h2>
+
+<textarea id="texto"></textarea>
+
+<p>Caracteres: <span id="contador">0</span></p>
+
+<script>
+var texto = document.getElementById("texto");
+var contador = document.getElementById("contador");
+
+texto.onkeyup = function() {
+    contador.innerText = texto.value.length;
+}
+</script>
+
+</body>
+</html>
